@@ -1,0 +1,528 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="~/Content/themplate/images/favicon.png" type="">
+    <title> Programming Course </title>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/themplate/css/bootstrap.css" />
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- nice select  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+    <!-- font awesome style -->
+    <link href="~/Content/themplate/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="~/Content/themplate/css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="~/Content/themplate/css/responsive.css" rel="stylesheet" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .btn-top {
+            background-image: url(../img/btn_top.png);
+            background-repeat: no-repeat;
+            background-color:#808080;
+            border: 3px solid #808080;
+            bottom: 20px;
+            cursor: pointer;
+            display: none;
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            position: fixed;
+            right: 20px;
+            text-align:center;
+            color:#e8ae24;
+            z-index: 10;
+        }
+        .btn-top:hover{
+            text-decoration: none;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="footer"> <a class="btn-top" href="#top" title="Top" style="display: inline;">TOP</a> </div>
+
+    <div class="hero_area" id="top">
+        <div class="bg-box">
+            <img src="~/Content/themplate/images/programmer2.jpg" alt="">
+        </div>
+
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="">
+                        <span>
+                            Programming Course
+                        </span>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=""> </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  mx-auto ">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#menu">Khóa Học</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Về chúng tôi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#book">Đăng Ký Khóa Học</a>
+                            </li>
+                        </ul>
+                        <div class="user_option">
+                            <div class="header-top">
+                                <div class="container">
+                                    <div class="header-left">
+                                        <ul>
+                                            @if (Session["TaiKhoan"] != null && Session["TaiKhoan"] != "")
+                                            {
+                                                <li style="color:red;">@Session["TaiKhoan"]</li>
+                                                @Html.ActionLink("Đăng xuất", "DangXuat", "Home")
+                                            }
+                                            else
+                                            {
+                                                <li style=" display: inline;"><a id="btnDangNhap" class="lock" href="@Url.Action("DangNhap","Home")">Đăng Nhập</a></li>
+                                                <li style=" display: inline;"><a class="lock" href="@Url.Action("DangKy","Home")">Đăng Ký</a></li>
+                                                <br />
+                                                @*<li><a href="@Url.Action("Index","LoginAdmin")" style="color:black;">Đăng Nhập Admin</a></li>*@
+                                            }
+                                            <li>
+
+                                            </li>
+                                        </ul>
+                                        <div class="clearfix"> </div>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                            </div>
+
+                            <link href="~/Content/css/style_form_dangnhap.css" rel="stylesheet" />
+                            <br />
+                            <div id="popup_login">
+                                <div class="login-form" id="login-form">
+                                    <div style="clear:both;text-align:right;margin-bottom:0;">
+                                        <span id="close-form" class="btn btn-danger">X</span>
+                                    </div>
+                                    <h2>Đăng nhập</h2>
+                                    <div class="form-info">
+                                        @using (Ajax.BeginForm("DangNhap", "Home", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" }))
+                                        {
+
+                                            <input class="email TaiKhoan" name="txtTenDangNhap" placeholder="Tên đăng nhập" required="" type="text">
+                                            <input class="password MatKhau" name="txtMatKhau" placeholder="Mật khẩu" required="" type="password">
+                                            <p><a href="#">Quên mật khẩu?</a></p>
+                                            <h3 style="font-weight:bold;color:red;text-align:left;" id="ThongBao"> </h3>
+                                            <ul class="login-buttons">
+                                                <li><input value="Đăng nhập" type="submit" id="btnDangNhap1"></li>
+                                                <li><a href="#" class="hvr-sweep-to-left">Đăng ký</a></li>
+                                            </ul>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            @Html.Action("GioHangPartial", "GioHang")
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+
+        <!-- slider section -->
+        <section class="slider_section ">
+            <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-md-7 col-lg-6 ">
+                                    <div class="detail-box">
+                                        <h1>
+                                            Programming Course
+                                        </h1>
+                                        <p>
+                                            Khóa Học Lập Trình Tốt Nhất Sao Hỏa
+                                        </p>
+                                        <div class="btn-box">
+                                            <a href="#menu" class="btn1">
+                                                Xem Khóa Học !
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-md-7 col-lg-6 ">
+                                    <div class="detail-box">
+                                        <h1>
+                                            Programming Course
+                                        </h1>
+                                        <p>
+                                            Khóa Học Lập Trình Xịn Xò Nhất Sao Hỏa
+                                        </p>
+                                        <div class="btn-box">
+                                            <a href="" class="btn1">
+                                                Xem Khóa Học !
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-md-7 col-lg-6 ">
+                                    <div class="detail-box">
+                                        <h1>
+                                            Programming Course
+                                        </h1>
+                                        <p>
+                                            Your potential. Our passion
+                                        </p>
+                                        <div class="btn-box">
+                                            <a href="" class="btn1">
+                                                Xem Khóa Học !
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <ol class="carousel-indicators">
+                        <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+                        <li data-target="#customCarousel1" data-slide-to="1"></li>
+                        <li data-target="#customCarousel1" data-slide-to="2"></li>
+                    </ol>
+                </div>
+            </div>
+
+        </section>
+        <!-- end slider section -->
+
+    </div>
+    <div class="header">
+        @Html.Partial("~/Views/Layout/HeaderTopPartital.cshtml")
+    </div>
+
+    <!--content-->
+    <div class="content">
+        @RenderBody()
+    </div>
+
+    <!--Adds-->
+    @*<div class="adv" style="display: block; position: fixed; top: 157px; left: 19px;" id="AdvestLeft">
+            <a href="https://pico.vn/BannerClick.aspx?BannerId=2319" target="_blank" title="Banner left_Xả hàng" rel="nofollow"><img src="//pico.vn/Uploads/Banner/2319_left.jpg" alt="Banner left_Xả hàng"></a><div class="clear" style="margin-bottom: 5px;"></div>
+        </div>*@
+
+    <!-- about section -->
+    <section class="about_section layout_padding">
+        <div class="container" id="about">
+
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="img-box">
+                        <img src="~/Content/themplate/images/Untitled.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h2>
+                                Chúng tôi là Programmer
+                            </h2>
+                        </div>
+                        <p>
+                            Bạn đang tìm kiếm một cơ hội để khám phá và phát triển kỹ năng lập trình của mình? Chúng tôi hân hạnh giới thiệu Khoá học Lập trình dành cho các bạn từ 15 tuổi trở lên, nơi mà mọi người, bất kể trình độ trước đó, đều có thể bắt đầu hành trình của mình trong thế giới lập trình máy tính.
+                        </p>
+                        <p>Khóa học thường bắt đầu với các kiến thức cơ bản như ngôn ngữ lập trình, các khai niệm cơ bản của lập trình, và cách sử dụng các công cụ lập trình. Sau đó, học viên sẽ tiến bộ qua các chủ đề phức tạp hơn như phát triển ứng dụng di động, thiết kế trang web, hoặc lập trình game.</p>
+                        <p>
+                            Quan trọng hơn, khóa học này không chỉ giúp các học viên học kiến thức mới mà còn phát triển kỹ năng suy luận, tích lũy kinh nghiệm qua việc giải quyẹ́t các vấn đề lập trình thực tế. Ngoài ra, học viên cũng có cơ hội làm việc nhóm, tích lực và chia sẻ kinh nghiệm với các đồng nghiệp còn lại.g di động tuyệt vời, hay chỉ đơn giản là muốn khám phá thế giới của lập trình, khóa học lập trình cho mọi độ tuổi sẽ là sự lựa chọn hoàn hảo cho bạn!
+                        </p>
+                        <p>Dù bạn muốn trở thành một lập trình viên chuyên nghiệp, phát triển ứng dụng cá nhân, hoặc đơn giản chỉ muốn khám phá thế giới của lập trình, Khoá học Lập trình của chúng tôi sẽ giúp bạn đi đến nơi bạn muốn. Hãy tham gia ngay để bắt đầu hành trình của bạn!
+                        </p>
+                        <a href="">
+                            Đọc thêm
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about section -->
+
+    <!-- book section -->
+    <section class="book_section layout_padding">
+        <div class="container"id="book">
+            <div class="heading_container">
+                <h2>
+                    Đặt Lịch Học
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form_container">
+                        <form action="">
+                            <div>
+                                <input type="text" class="form-control" placeholder="Tên" />
+                            </div>
+                            <div>
+                                <input type="text" class="form-control" placeholder="Số Điện Thoại" />
+                            </div>
+                            <div>
+                                <input type="email" class="form-control" placeholder="Email" />
+                            </div>
+                            <div>
+                                <select class="form-control nice-select wide">
+                                    <option value="" disabled selected>
+                                        Số người
+                                    </option>
+                                    <option value="">
+                                        2
+                                    </option>
+                                    <option value="">
+                                        3
+                                    </option>
+                                    <option value="">
+                                        4
+                                    </option>
+                                    <option value="">
+                                        5
+                                    </option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="btn_box">
+                                <button>
+                                    Đặt ngay
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="map_container ">
+                        <div id="googleMap"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end book section -->
+
+    <!-- client section -->
+    <section class="client_section layout_padding-bottom">
+        <div class="container">
+            <div class="heading_container heading_center psudo_white_primary mb_45">
+                <h2>
+                    Người trong tổ chức
+                </h2>
+            </div>
+            <div class="carousel-wrap row ">
+                <div class="owl-carousel client_owl-carousel">
+                    <div class="item">
+                        <div class="box">
+                            <div class="detail-box">
+                                <p>
+
+                                </p>
+                                <h6>
+                                    Nguyễn Đức Việt (Chủ tịch Hội đồng quản trị)
+                                </h6>
+                                <p>
+                                    Chuyên gia phân tích và thiết kế hệ thống thông tin
+                                </p>
+                            </div>
+                            <div class="img-box">
+                                <img src="~/Content/themplate/images/NDV.jpg" alt="" class="box-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <div class="detail-box">
+                                <p>
+
+                                </p>
+                                <h6>
+                                    Ths.Bùi Triều Vĩ
+                                </h6>
+                                <p>
+                                    Nhà nghiên cứu khoa học máy tính
+                                </p>
+                            </div>
+                            <div class="img-box">
+                                <img src="~/Content/themplate/images/Tvi.jpg" alt="" class="box-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end client section -->
+
+    <!-- footer section -->
+    <footer class="footer_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <div class="footer_contact">
+                        <h4>
+                            Liên lạc với chúng tôi
+                        </h4>
+                        <div class="contact_link_box">
+                            <a href="">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>
+                                    Vị trí: Sever Sao Hỏa
+                                </span>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span>
+                                    Số điện thoại: +84 888859563
+                                </span>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>
+                                    Programmingcourse@gmail.com
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <div class="footer_detail">
+                        <a href="" class="footer-logo">
+                            Programming Course
+                        </a>
+                        <p>
+                            Khóa Học VIP nhất Sao Hỏa
+                        </p>
+                        <div class="footer_social">
+                            <a href="">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h4>
+                        Thời gian đăng ký
+                    </h4>
+                    <p>
+                        Mọi ngày
+                    </p>
+                    <p>
+                        04.00 Am - 22.00 Pm
+                    </p>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>
+                    &copy; <span id="displayYear"></span> All Rights Reserved By Nhism
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section -->
+
+    <!-- jQery -->
+    <script src="~/Content/themplate/js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap js -->
+    <script src="~/Content/themplate/js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <!-- custom js -->
+    <script src="~/Content/themplate/js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
+    <!-- End Google Map -->
+
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>*@
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</body>
+</html>

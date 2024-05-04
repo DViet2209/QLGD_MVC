@@ -1,0 +1,25 @@
+﻿
+<div id="divGioHang" class="cart box_1">
+    <a href="@Url.Action("XemGioHang","GioHang")">
+        <h3>
+            <div class="total">
+                @ViewBag.TongTien.ToString("#,##") VNĐ (<span>@ViewBag.TongSoLuong</span> sp)
+                <img src="~/Content/images/cart.png" alt="" />
+            </div>
+            
+        </h3>
+    </a>
+    <p><a href="@Url.Action("XemGioHang","GioHang")" class="simpleCart_empty" style="align-content:center;"></a></p>
+    @if (ViewBag.ThongBao != null)
+    {
+        <script>
+            alert("Khóa Học đã đăng ký đủ!");
+        </script>
+    }
+</div>
+<style>
+    .simpleCart_empty:hover{
+        text-decoration:none;
+        color:red;
+    }
+</style>

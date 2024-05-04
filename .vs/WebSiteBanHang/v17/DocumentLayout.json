@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Try\\Fast_Food_ASP.NET_MVC\\Fast_Food_ASP.NET_MVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/E__TRY_FAST_FOOD_ASP.NET_MVC_FAST_FOOD_ASP.NET_MVC_WEBSITEBANHANG_APP_DATA_QUANLYBANHANG.MDF/True/SqlTable/dbo.LoaiThanhVien_Quyen.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/E__TRY_FAST_FOOD_ASP.NET_MVC_FAST_FOOD_ASP.NET_MVC_WEBSITEBANHANG_APP_DATA_QUANLYBANHANG.MDF/True/SqlTable/dbo.LoaiThanhVien.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/E__TRY_FAST_FOOD_ASP.NET_MVC_FAST_FOOD_ASP.NET_MVC_WEBSITEBANHANG_APP_DATA_QUANLYBANHANG.MDF/True/SqlTable/dbo.SanPham.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{372FA57F-B35C-46D0-9242-2149787375DC}|WebSiteBanHang\\WebSiteBanHang.csproj|e:\\try\\fast_food_asp.net_mvc\\fast_food_asp.net_mvc\\websitebanhang\\views\\sanpham\\sanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{372FA57F-B35C-46D0-9242-2149787375DC}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\sanpham\\sanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{372FA57F-B35C-46D0-9242-2149787375DC}|WebSiteBanHang\\WebSiteBanHang.csproj|e:\\try\\fast_food_asp.net_mvc\\fast_food_asp.net_mvc\\websitebanhang\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{372FA57F-B35C-46D0-9242-2149787375DC}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{372FA57F-B35C-46D0-9242-2149787375DC}|WebSiteBanHang\\WebSiteBanHang.csproj|e:\\try\\fast_food_asp.net_mvc\\fast_food_asp.net_mvc\\websitebanhang\\views\\sanpham\\sanphamstyle1partial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{372FA57F-B35C-46D0-9242-2149787375DC}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\sanpham\\sanphamstyle1partial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/E__TRY_FAST_FOOD_ASP.NET_MVC_FAST_FOOD_ASP.NET_MVC_WEBSITEBANHANG_APP_DATA_QUANLYBANHANG.MDF/True/SqlTable/dbo.LoaiSanPham.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{372FA57F-B35C-46D0-9242-2149787375DC}|WebSiteBanHang\\WebSiteBanHang.csproj|E:\\Try\\Fast_Food_ASP.NET_MVC\\Fast_Food_ASP.NET_MVC\\websitebanhang\\views\\sanpham\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{372FA57F-B35C-46D0-9242-2149787375DC}|WebSiteBanHang\\WebSiteBanHang.csproj|solutionrelative:websitebanhang\\views\\sanpham\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dbo.LoaiThanhVien_Quyen [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/E__TRY_FAST_FOOD_ASP.NET_MVC_FAST_FOOD_ASP.NET_MVC_WEBSITEBANHANG_APP_DATA_QUANLYBANHANG.MDF/True/SqlTable/dbo.LoaiThanhVien_Quyen.sql",
+              "ToolTip": "dbo.LoaiThanhVien_Quyen [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-22T14:01:29.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.LoaiThanhVien [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/E__TRY_FAST_FOOD_ASP.NET_MVC_FAST_FOOD_ASP.NET_MVC_WEBSITEBANHANG_APP_DATA_QUANLYBANHANG.MDF/True/SqlTable/dbo.LoaiThanhVien.sql",
+              "ToolTip": "dbo.LoaiThanhVien [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-22T14:01:19.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SanPhamStyle1Partial.cshtml",
+              "DocumentMoniker": "E:\\Try\\Fast_Food_ASP.NET_MVC\\Fast_Food_ASP.NET_MVC\\WebSiteBanHang\\Views\\SanPham\\SanPhamStyle1Partial.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\SanPham\\SanPhamStyle1Partial.cshtml",
+              "ToolTip": "E:\\Try\\Fast_Food_ASP.NET_MVC\\Fast_Food_ASP.NET_MVC\\WebSiteBanHang\\Views\\SanPham\\SanPhamStyle1Partial.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\SanPham\\SanPhamStyle1Partial.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-22T13:55:59.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SanPhamController.cs",
+              "DocumentMoniker": "E:\\Try\\Fast_Food_ASP.NET_MVC\\Fast_Food_ASP.NET_MVC\\WebSiteBanHang\\Controllers\\SanPhamController.cs",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Controllers\\SanPhamController.cs",
+              "ToolTip": "E:\\Try\\Fast_Food_ASP.NET_MVC\\Fast_Food_ASP.NET_MVC\\WebSiteBanHang\\Controllers\\SanPhamController.cs",
+              "RelativeToolTip": "WebSiteBanHang\\Controllers\\SanPhamController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T13:55:34.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SanPham.cshtml",
+              "DocumentMoniker": "E:\\Try\\Fast_Food_ASP.NET_MVC\\Fast_Food_ASP.NET_MVC\\WebSiteBanHang\\Views\\SanPham\\SanPham.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\SanPham\\SanPham.cshtml",
+              "ToolTip": "E:\\Try\\Fast_Food_ASP.NET_MVC\\Fast_Food_ASP.NET_MVC\\WebSiteBanHang\\Views\\SanPham\\SanPham.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\SanPham\\SanPham.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-22T13:53:16.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Menu.cshtml",
+              "DocumentMoniker": "E:\\Try\\Fast_Food_ASP.NET_MVC\\Fast_Food_ASP.NET_MVC\\WebSiteBanHang\\Views\\SanPham\\Menu.cshtml",
+              "RelativeDocumentMoniker": "WebSiteBanHang\\Views\\SanPham\\Menu.cshtml",
+              "ToolTip": "E:\\Try\\Fast_Food_ASP.NET_MVC\\Fast_Food_ASP.NET_MVC\\WebSiteBanHang\\Views\\SanPham\\Menu.cshtml",
+              "RelativeToolTip": "WebSiteBanHang\\Views\\SanPham\\Menu.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-22T13:53:13.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dbo.SanPham [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/E__TRY_FAST_FOOD_ASP.NET_MVC_FAST_FOOD_ASP.NET_MVC_WEBSITEBANHANG_APP_DATA_QUANLYBANHANG.MDF/True/SqlTable/dbo.SanPham.sql",
+              "ToolTip": "dbo.SanPham [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-22T13:44:13.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dbo.LoaiSanPham [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/E__TRY_FAST_FOOD_ASP.NET_MVC_FAST_FOOD_ASP.NET_MVC_WEBSITEBANHANG_APP_DATA_QUANLYBANHANG.MDF/True/SqlTable/dbo.LoaiSanPham.sql",
+              "ToolTip": "dbo.LoaiSanPham [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-04-22T13:50:11.655Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

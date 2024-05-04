@@ -1,0 +1,21 @@
+C:\Users\johny\Downloads\WebSiteBanHang\Common\bin\Debug\Common.dll
+C:\Users\johny\Downloads\WebSiteBanHang\Common\bin\Debug\Common.pdb
+C:\Users\johny\Downloads\WebSiteBanHang\Common\obj\Debug\Common.dll
+C:\Users\johny\Downloads\WebSiteBanHang\Common\obj\Debug\Common.pdb
+E:\Document\Đồ án\WebSiteBanHang\Common\bin\Debug\Common.dll
+E:\Document\Đồ án\WebSiteBanHang\Common\bin\Debug\Common.pdb
+E:\Document\Đồ án\WebSiteBanHang\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\Document\Đồ án\WebSiteBanHang\Common\obj\Debug\Common.dll
+E:\Document\Đồ án\WebSiteBanHang\Common\obj\Debug\Common.pdb
+E:\WebSiteBanHang\Common\bin\Debug\Common.dll
+E:\WebSiteBanHang\Common\bin\Debug\Common.pdb
+E:\WebSiteBanHang\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+E:\WebSiteBanHang\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+E:\WebSiteBanHang\Common\obj\Debug\Common.dll
+E:\WebSiteBanHang\Common\obj\Debug\Common.pdb
+E:\Try\Fast_Food_ASP.NET_MVC\Fast_Food_ASP.NET_MVC\Common\bin\Debug\Common.dll
+E:\Try\Fast_Food_ASP.NET_MVC\Fast_Food_ASP.NET_MVC\Common\bin\Debug\Common.pdb
+E:\Try\Fast_Food_ASP.NET_MVC\Fast_Food_ASP.NET_MVC\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+E:\Try\Fast_Food_ASP.NET_MVC\Fast_Food_ASP.NET_MVC\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+E:\Try\Fast_Food_ASP.NET_MVC\Fast_Food_ASP.NET_MVC\Common\obj\Debug\Common.dll
+E:\Try\Fast_Food_ASP.NET_MVC\Fast_Food_ASP.NET_MVC\Common\obj\Debug\Common.pdb
