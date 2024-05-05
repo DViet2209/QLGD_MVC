@@ -53,7 +53,7 @@ namespace WebSiteBanHang.Controllers
                         var path = Path.Combine(Server.MapPath("~/Content/HinhAnhSP"), fileName);
                         if (System.IO.File.Exists(path))
                         {
-                            ViewBag.upload1 = "Hình " + i + "đã tồn tại <br />";
+                            ViewBag.upload1 = "Hình " + i + fileName + "đã tồn tại <br />";
                             loi++;
                             
                         }
