@@ -6,7 +6,7 @@
     Layout = "~/Views/Layout/AdminLayout.cshtml";
     WebGrid grid = new WebGrid(source: Model, rowsPerPage: 5);
 }
-@Html.ActionLink("Thêm sản phẩm", "TaoMoi",null, new {@class="btn btn-success" })
+@Html.ActionLink("Thêm Khóa Học", "TaoMoi",null, new {@class="btn btn-success" })
 <br /><br />
 @grid.GetHtml(
     tableStyle: "divTable", 
@@ -15,8 +15,8 @@
     rowStyle: "gridRow" ,
     alternatingRowStyle: "gridAltRow",
     columns: grid.Columns(
-    grid.Column("MaSP", "Mã sản phẩm" ),
-    grid.Column("TenSP", "Tên SP" ),
+    grid.Column("MaSP", "Mã Khóa Học" ),
+    grid.Column("TenSP", "Tên Khóa Học" ),
     grid.Column("HinhAnh", "Hình ảnh", format: p => @Html.Raw("<img width=\"150\" height=\"80\" src=\"../Content/HinhAnhSP/"+p.HinhAnh+"\">")),
     grid.Column(format: p=> @Html.ActionLink("Chỉnh sửa","ChinhSua",new {id=p.MaSP})),
     grid.Column(format: p => @Html.ActionLink("Xóa", "Xoa", new { id = p.MaSP }))

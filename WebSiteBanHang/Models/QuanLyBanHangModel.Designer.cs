@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'E:\Try\Fast_Food_ASP.NET_MVC\Fast_Food_ASP.NET_MVC\WebSiteBanHang\Models\QuanLyBanHangModel.edmx'. 
+﻿// T4 code generation is enabled for model 'E:\Try\QLGD_MVC\QLGD MVC\WebSiteBanHang\Models\QuanLyBanHangModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
